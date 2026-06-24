@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="274" height="86" viewBox="0 0 274 86" role="img" aria-labelledby="title desc">
+  <title id="title">시티클린 로고</title>
+  <desc id="desc">파란 원형 C 심볼과 시티 클린 텍스트 로고</desc>
+  <defs>
+    <linearGradient id="cityclean-blue" x1="8" y1="8" x2="72" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0756d8"/>
+      <stop offset="1" stop-color="#20a6f6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="43" cy="43" r="35" fill="url(#cityclean-blue)"/>
+  <path fill="#fff" d="M48.8 61.5c-12.7 0-21.8-7.9-21.8-18.7 0-10.9 9.1-18.8 21.8-18.8 7.7 0 13.7 2.6 17.1 7.3l-9.7 8.1c-1.8-2.4-4.4-3.7-7.4-3.7-4.7 0-8 2.9-8 7.1 0 4.1 3.3 7 8 7 3.1 0 5.6-1.3 7.4-3.8l9.7 8.2c-3.4 4.7-9.4 7.3-17.1 7.3Z"/>
+  <text x="94" y="40" fill="#0756d8" font-family="Pretendard, 'Noto Sans KR', Arial, sans-serif" font-size="29" font-weight="900" letter-spacing="-1">시티 클린</text>
+  <text x="96" y="63" fill="#174284" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" font-weight="800" letter-spacing="3">CITY CLEAN</text>
+</svg>

@@ -1,0 +1,31 @@
+/* ============================================================
+   CityClean — global stylesheet entry
+   Tailwind first, then modular layers (see app/styles/*).
+   Each partial owns one concern; tokens.css is the single
+   source of truth for design variables.
+   ============================================================ */
+@import "tailwindcss";
+
+@source "../app";
+@source "../components";
+@source "../content";
+@source "../lib";
+@source "../mdx-components.tsx";
+@source not "../.next";
+@source not "../node_modules";
+@source not "../tmp";
+@source not "../사진";
+@source not "../시안";
+
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/primitives.css";
+@import "./styles/header.css";
+@import "./styles/pages.css";
+@import "./styles/home.css";
+@import "./styles/claude.css";
+@import "./styles/animation.css";
+@import "./styles/metro.css";
+@import "./styles/v4.css";
+@import "./styles/pro.css";
+@import "./styles/seven.css";

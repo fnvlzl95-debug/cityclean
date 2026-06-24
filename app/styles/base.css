@@ -1,0 +1,57 @@
+/* ============================================================
+   Base — reset, document, root typography
+   ============================================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: clip;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: -0.011em;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.section-title,
+.page-hero__title,
+.display {
+  font-family: var(--font-head);
+  word-break: keep-all;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* room for the fixed mobile call bar */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 76px;
+  }
+}

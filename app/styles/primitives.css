@@ -1,0 +1,127 @@
+/* ============================================================
+   Primitives — shared type helpers, brand mark, buttons
+   ============================================================ */
+
+/* ---------- eyebrow / kicker (refined mono spec label) ---------- */
+.eyebrow,
+.kicker-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kicker-light svg {
+  color: var(--accent);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.6rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ---------- section heads ---------- */
+.section-title {
+  color: var(--ink);
+  font-size: clamp(2rem, 4.2vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.section-copy {
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* ---------- brand mark ---------- */
+.brand-sigil {
+  position: relative;
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border-radius: 0;
+  background: var(--ink);
+  color: #ffffff;
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- buttons (restrained, premium) ---------- */
+.btn {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 0;
+  padding: 0 1.7rem;
+  font-family: var(--font-head);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  transition: box-shadow 240ms ease, background 240ms ease, border-color 240ms ease,
+    color 240ms ease, transform 240ms ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brand);
+}
+
+/* outline buttons on light surfaces */
+.btn--ghost,
+.btn--light,
+.btn--glass {
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+}
+
+.btn--ghost:hover,
+.btn--light:hover,
+.btn--glass:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+}
+
+/* solid light button for dark bands */
+.btn--inverse {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.btn--inverse:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* outline button for dark bands */
+.btn--on-dark {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn--on-dark:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
